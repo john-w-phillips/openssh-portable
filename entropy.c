@@ -55,7 +55,9 @@ static uid_t original_uid, original_euid;
 void
 seed_rng(void)
 {
+  printf("Seed RNG\n");
 #ifndef OPENSSL_PRNG_ONLY
+  printf("Bad!\n");
 	int devnull;
 	int p[2];
 	pid_t pid;
